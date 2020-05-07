@@ -1,0 +1,8 @@
+<div class="card mr-5 mb-5" style="width: 18rem;">
+    <img class="card-img-top" [src]="'images/' + cinema.image" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{cinema.nom}}</h5>
+        <p class="card-text">{{cinema.adresse}}</p>
+        <a [routerLink]="['/films', cinema.id]" class="btn btn-info">Choisir</a>
+    </div>
+</div>
